@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResearchIt - Pricing</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Header -->
+<header>
+    <div class="logo">
+        <img src="logo.png" alt="ResearchIt Logo">          
+        <p>Your One-Stop Solution for Research Paper Writing</p>
+    </div>
+</header>
+
+    <!-- Main Content Section -->
+    <main class="container">
+        <!-- Left Section -->
+        <div class="left-section">
+            <h2>Why Choose Us?</h2>
+            <p>✅ We deliver meticulously crafted research papers, ensuring originality and academic excellence. 🏆</p>
+            
+            <h2>Our Services</h2>
+            <ul>
+                <li>📄 Expertly structured papers with in-depth analysis and precise scientific formatting.</li>
+                <li>📚 Comprehensive reviews, synthesizing key findings from credible sources.</li>
+                <li>✍️ Precision editing for grammar, clarity, and adherence to journal guidelines.</li>
+                <li>📑 End-to-end support for formatting, compliance, and impactful submissions.</li>
+            </ul>
+
+            <!-- QR Code for Payment -->
+            <div class="payment-section">
+                <h3>Scan & Pay</h3>
+                <img src="Phonepay800.png" alt="Payment QR Code" class="qr-code">
+            </div>
+        </div>
+
+        <!-- Center Section: Pricing Over Logo -->
+        <div class="center-section">
+            <div class="pricing-overlay">
+                <h2>Pricing</h2>
+                <p>📚 Review Paper: <strong>INR 1500/-</strong></p>
+                <p>🎨 Poster Making: <strong>INR 1000/-</strong></p>
+                <p>📄 Research Paper: <strong>INR 1000/-</strong></p>
+                <p>🎨 PowerPoint Presentation: <strong>INR 1000/-</strong></p>
+            </div>
+        </div>
+
+        <!-- Right Section: Contact Form -->
+        <!-- Right Section: Contact Us -->
+<div class="right-section">
+    <h2>Contact Us</h2>
+
+    <label for="name">Your Name</label>
+    <input type="text" id="name" placeholder="Enter your name" required>
+
+    <label for="email">Your Email</label>
+    <input type="email" id="email" placeholder="Enter your email" required>
+
+    <label for="message">Your Message</label>
+    <textarea id="message" rows="4" placeholder="Type your message here..." required></textarea>
+
+    <br>
+    <!-- "Send Email" Button -->
+    <button class="send-btn" onclick="sendEmail()">Send to theresearchit@gmail.com</button>
+</div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Left Side: Contact Info -->
+        <div class="footer-left">
+            <p>Contact information:</p>
+            Mon to Fri : 9:30 am to 5:30 pm
+            <p>Email: theresearchit@gmail.com</p>
+            <p>Call / WhatsApp us at: +91-9079094194</p>
+            
+        </div>
+
+        <!-- Center: Logo -->
+        <div class="footer-center">
+            <div class="footer-logo">
+                <img src="logo.png" alt="ResearchIt Logo">
+                <p>&copy; 2025 ResearchIt. All Rights Reserved.</p>
+            </div>
+        </div>
+
+        <!-- Right Side: Legal Links -->
+        <div class="footer-right">
+            <ul>
+                <li><a href="#">Copyright Policy</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Disclaimer</a></li>
+                <li><a href="#">Hyperlink Policy</a></li>
+                <li><a href="#">Site Map</a></li>
+            </ul>
+            <p>&copy &reg; This WebSite is designed by Arun Jangir and ResearchIt Inc.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Confirmation Message -->
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent actual form submission
+            document.getElementById("confirmation-message").style.display = "block";
+            setTimeout(() => {
+                document.getElementById("confirmation-message").style.display = "none";
+            }, 5000); // Hide after 5 seconds
+            this.reset(); // Reset form fields
+        });
+    </script>
+
+</body>
+</html>

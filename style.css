@@ -1,0 +1,365 @@
+/* Reset & General Styling */
+*/* Centered Tagline */
+.header-tagline {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: bold;
+    white-space: nowrap;
+    color: white;
+    font-family: "Brush Script MT", cursive; /* Cursive Font */
+}
+
+body {
+    background-color: #2a124c;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2b1877;
+    padding: 15px 50px;
+}
+
+
+.logo img {
+    width: 300px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 120px;
+}
+
+/* Left Section */
+.left-section {
+    width: 45%;
+}
+
+.left-section h2 {
+    font-size: 32px;
+    margin-top: 29px;
+}
+
+.left-section p,
+.left-section ul {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.left-section ul {
+    list-style: none;
+    padding-left: 5px;
+}
+
+.left-section ul li {
+    margin: 10px 0;
+    position: relative;
+    padding-left: 20px;
+}
+
+/* Custom bullet point */
+.left-section ul li::before {
+    content: "✔";
+    color: #3b154e;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Center Section: Background Logo & Pricing */
+.center-section {
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background: url('atom\ logo.png') no-repeat center center;
+    background-size: 1px;
+}
+
+/* Pricing Overlay */
+.pricing-overlay {
+    text-align: center;
+    background: rgba(234, 232, 233, 0.8);
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 8px rgba(183, 54, 54, 0.1);
+}
+
+.pricing-overlay h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.pricing-overlay p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Right Section: Contact Form */
+.right-section {
+    width: 30%;
+    background: rgba(113, 100, 229, 0.5);  /* Slight transparency for better visibility */
+    padding: 40px;
+    height: 580px;
+    border-radius: 70px;
+    box-shadow: 0px 4px 8px rgba(17, 2, 2, 0.1);
+    margin-left: 5px;
+    margin-top: 5px
+}
+
+/* Form Styling */
+form {
+    display: grid;
+    gap: 10px;
+}
+
+label {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: none solid #88de9c;
+    border-radius: 5px;
+}
+
+.send-btn {
+    background: #f99d34;
+    color: rgb(19, 2, 27);
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.send-btn:hover {
+    background: #cc7000;
+}
+
+/* Footer */
+footer {
+    background: #190f3b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+/* Header */
+header {
+    display: -moz-stack;
+    justify-content: space-between;
+    align-items: center;
+    background: #171247;
+    padding: 15px 50px;
+    color: white;
+    position: relative;
+}
+
+/* Centered Tagline */
+.header-tagline {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: bold;
+    white-space: nowrap;
+    color: white; /* Ensures text is white */
+}
+/* Reset & General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url('atom\ logo.png') no-repeat center center fixed;
+    background-size: cover;  /* This ensures the image covers the whole page */
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(23, 18, 71, 0.9);  /* Slight transparency for better visibility */
+    padding: 15px 50px;
+    color: white;
+    position: relative;
+    z-index: 10;
+}
+
+/* Centered Tagline */
+.header-tagline {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: bold;
+    white-space: nowrap;
+    color: white;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 120px;
+    position: relative;
+    z-index: 10;
+}
+
+/* Pricing Overlay */
+.pricing-overlay {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);  /* Transparent white for better readability */
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Footer */
+footer {
+    background: rgba(23, 18, 71, 0.9);  /* Slight transparency for better visibility */
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-top: 20px;
+    position: relative;
+}
+
+/* Footer Logo Styling */
+.footer-logo {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center; /* Centers the logo */
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 200px; /* Set a proper width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Prevent overflow */
+    object-fit: contain; /* Keep proportions intact */
+}
+/* Payment Section */
+.payment-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.payment-section h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: #2f1454;
+}
+
+.payment-section p {
+    font-size: 16px;
+    color: white;
+}
+
+.qr-code {
+    width: 150px;  /* Adjust size */
+    height: auto;
+    margin-top: 10px;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: rgba(23, 18, 71, 0.9);  /* Slight transparency for better visibility */
+    color: white;
+    flex-wrap: wrap;
+}
+
+.footer-left {
+    flex: 1;
+}
+
+.footer-center {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-right {
+    flex: 1;
+    text-align: right;
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 10px;
+    margin: 5px;
+}
+
+.footer-right ul li {
+    display: inline;
+
+    margin-left: 4px;
+}
+
+.footer-right ul li a {
+    color: white;
+    text-decoration: m;
+    font-size: 14px;
+}
+
+.footer-right ul li a:hover {
+    text-decoration: underline;
+}
+/* Header */
+header {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center;
+    background: rgba(23, 18, 71, 0.9);
+    padding: 15px 5%;
+    color: white;
+    text-align: center;
+}
+
+/* Center Logo */
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Center Tagline */
+.logo p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5px;
+}
